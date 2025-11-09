@@ -1,4 +1,4 @@
-# Social AI / ImgShare
+# ImgShare
 
 Brief: A full-stack AI powered social media prototype that lets users generate images from prompts (OpenAI DALL·E 3), upload images & videos, and search shared media by user or keyword.
 
