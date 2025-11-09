@@ -12,8 +12,8 @@ Brief: A full-stack AI powered social media prototype that lets users generate i
 
 ## Tech Stack
 
-Frontend: React 18, React Router, Material UI, Ant Design, Styled Components, Axios, OpenAI JS SDK, react-photo-album, yet-another-react-lightbox.
-Backend: Go (Gorilla Mux), JWT (HS256), Elasticsearch client (olivere v7), Google Cloud Storage client, UUID, multipart handling.
+Frontend: React 18, React Router, Material UI, Ant Design, OpenAI JS SDK, react-photo-album, react-lightbox.
+Backend: Go (Gorilla Mux), JWT (HS256), Elasticsearch client (olivere v7), Google Cloud Storage client, UUID.
 Infra: Google App Engine Flexible (Go runtime), Google Cloud Storage bucket, External Elasticsearch cluster, OpenAI API.
 
 ## Core Architecture (High Level)
@@ -33,8 +33,8 @@ POST /signup | POST /signin | POST /upload (media_file + message) | GET /search?
 
 ## Deployment
 
-Backend: Google App Engine Flex (`app.yaml`).
-Frontend: Any static hosting (e.g. Vercel/Netlify/Firebase) pointing to deployed backend base URL.
+Backend: Deployed on AWS (Go service running behind an AWS-managed endpoint).
+Frontend: Any static hosting pointing to deployed backend base URL.
 
 ## Future Improvements
 
@@ -44,11 +44,3 @@ Frontend: Any static hosting (e.g. Vercel/Netlify/Firebase) pointing to deployed
 - Add pagination & infinite scroll
 - Add Go unit tests & React integration tests
 - Fine-grained media access (signed URLs) & moderation
-
-## Elevator Pitch
-
-"Social AI combines generative AI with a minimal social sharing layer: prompt, create, upload, and instantly search your AI-crafted media."
-
----
-
-For more details or collaboration interests, feel free to open issues or PRs.
